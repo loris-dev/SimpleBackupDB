@@ -73,9 +73,6 @@ class Backup extends Database
                                     $this->queryFinal .= '0';
 
                                 else:
-                                    var_dump($tableRes[$j]);
-                                    var_dump($colsDescribes[$j]);
-
                                     switch ($colsDescribes[$j]['Null']):
                                         case 'YES':
                                             $this->queryFinal .= 'NULL';
